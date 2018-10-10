@@ -1,0 +1,18 @@
+Package: evolvingClusteringR
+Type: Package
+Title: Evolving Clustering
+Version: 0.1.0
+Maintainer: David G. Marquez <david.gonzalez.marquez@gmail.com>
+Authors@R: c(person("David G.", "Marquez",
+                    email = "david.gonzalez.marquez@gmail.com",
+                    role = c("aut", "cre"))
+           )
+Description: Dynamic version of popular clustering algorithms: K-means and EM as
+    described in <<A novel and simple strategy for evolving prototype based 
+    clustering>>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports: MASS, mclust, mvtnorm, plotrix, phonTools, clValid, fpc, 
+  PerformanceAnalytics, methods
