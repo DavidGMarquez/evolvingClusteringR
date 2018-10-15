@@ -7,6 +7,7 @@ A R package for evolving clustering that implements the evolving K-means and evo
 Use install_github from **devtools** package
 
 ```r
+library("devtools")
 install_github("DavidGMarquez/evolvingClusteringR")
 ```
 
