@@ -21,25 +21,37 @@ In the folder Scripts is also included the file `exampleMain.R`. This code execu
 
 ### Examples
 ```r
- tf <- tempfile()
- iris2 <- iris
- iris2$Species <- as.numeric(iris2$Species)
+ tf = tempfile()
+ iris2 = iris
+ iris2$Species = as.numeric(iris2$Species)
+ iris2 <- iris2[sample(nrow(iris2)),]
  write.table(iris2,tf,row.names=FALSE, col.names=FALSE,sep=",")
  samplesToInitMeta=50
- parameters<-list(memory=1,KinitMclust=3)
- results=testEvolutiveDynamicConfluenceFastEM(tf,samplesToInitMeta,parameters)
- results$clusterModel$fit
+ parameters=list(memory=2,KinitMclust=3)
+ resultsA=testEvolutiveDynamicConfluenceFastEM(tf,samplesToInitMeta,parameters)
+ resultsA$clusterModel$fit
+ plot(iris2[,-5],col=resultsA$clusterModel$fit)
+ parameters<-list(memory=0.01,KinitMclust=3)
+ resultsB=testEvolutiveDynamicConfluenceFastEM(tf,samplesToInitMeta,parameters)
+ resultsB$clusterModel$fit
+ plot(iris2[,-5],col=resultsB$clusterModel$fit)
 ```
 
 ```r
- tf <- tempfile()
- iris2 <- iris
- iris2$Species <- as.numeric(iris2$Species)
+ tf = tempfile()
+ iris2 = iris
+ iris2$Species = as.numeric(iris2$Species)
+ iris2 <- iris2[sample(nrow(iris2)),]
  write.table(iris2,tf,row.names=FALSE, col.names=FALSE,sep=",")
  samplesToInitMeta=50
- parameters<-list(memory=1,KinitMclust=3)
- results=testEvolutiveDynamicConfluenceFastKmeans(tf,samplesToInitMeta,parameters)
- results$clusterModel$fit
+ parameters=list(memory=2,KinitMclust=3)
+ resultsA=testEvolutiveDynamicConfluenceFastKmeans(tf,samplesToInitMeta,parameters)
+ resultsA$clusterModel$fit
+ plot(iris2[,-5],col=resultsA$clusterModel$fit)
+ parameters<-list(memory=0.01,KinitMclust=3)
+ resultsB=testEvolutiveDynamicConfluenceFastKmeans(tf,samplesToInitMeta,parameters)
+ resultsB$clusterModel$fit
+ plot(iris2[,-5],col=resultsB$clusterModel$fit)
 ```
 
 ## License
