@@ -54,6 +54,25 @@ In the folder Scripts is also included the file `exampleMain.R`. This code execu
  plot(iris2[,-5],col=resultsB$clusterModel$fit)
 ```
 
+## Reference
+ 
+Please cite this publication when referencing or using this material:
+```
+@article{MARQUEZ201816,
+title = "A novel and simple strategy for evolving prototype based clustering",
+journal = "Pattern Recognition",
+volume = "82",
+pages = "16 - 30",
+year = "2018",
+issn = "0031-3203",
+doi = "https://doi.org/10.1016/j.patcog.2018.04.020",
+url = "http://www.sciencedirect.com/science/article/pii/S0031320318301547",
+author = "David G. Márquez and Abraham Otero and Paulo Félix and Constantino A. García",
+keywords = "Evolving clustering, Data stream, Concept drift, Gaussian mixture models, K-means, Cluster evolution"
+}
+```
+
+
 ## License
 
 The package is available under GNU General Public License v3.0 `gpl-3.0`.
