@@ -13,7 +13,7 @@ install_github("DavidGMarquez/evolvingClusteringR")
 
 ## Usage
 
-There are two functions in the package `testEvolutiveDynamicConfluenceFastEM` and `testEvolutiveDynamicConfluenceFastEM`. Both functions take as arguments the path of a CSV file, the number of samples for the initialization and a list of parameters. 
+There are two functions in the package `testEvolutiveDynamicConfluenceFastKmeans` and `testEvolutiveDynamicConfluenceFastEM`. Both functions take as arguments the path of a CSV file, the number of samples for the initialization and a list of parameters. 
 The CSV file should have just numbers separated by commas, the last column must be the ground truth. 
 In the list of parameters you should add the `memory` parameter of the algorithm (see [Paper](https://www.sciencedirect.com/science/article/pii/S0031320318301547) ) and the number of clusters for the initialization `KinitMclust`.
 
