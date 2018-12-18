@@ -54,6 +54,12 @@ In the folder Scripts is also included the file `exampleMain.R`. This code execu
  plot(iris2[,-5],col=resultsB$clusterModel$fit)
 ```
 
+### Evolving EM Results Animation
+![alt text](https://github.com/DavidGMarquez/evolvingClusteringR/blob/master/3C2D2400Spiral.gif "Spiral Dataset EvolvingEM")
+![alt text](https://github.com/DavidGMarquez/evolvingClusteringR/blob/master/4C2D3200Linear.gif "Spiral Dataset EvolvingEM")
+
+
+
 ## Reference
  
 Please cite this publication when referencing or using this material:
